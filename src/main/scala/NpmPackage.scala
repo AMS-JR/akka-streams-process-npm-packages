@@ -53,8 +53,7 @@ case class Version(version: String, objectBody: Value) {
   try {
      objectBody.obj("keywords").arrOpt match {
      case Some(u) => keywords = keywords  ++ u
-       println("keywords "+keywords)
-     case None => ???
+     case None =>
  }
   } catch {
      case e: Exception =>
